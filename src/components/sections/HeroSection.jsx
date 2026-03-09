@@ -535,7 +535,8 @@ const HeroSection = () => {
           .hero-stats { gap: 30px; }
 
           .hero-stat-number { font-size: 2rem; }
-
+          .hero-buttons { flex-direction: column; align-items: center; width: 100%; }
+          .hero-btn-primary, .hero-btn-secondary { width: 100%; text-align: center; }
         }
 
       `}</style>

@@ -160,11 +160,11 @@ const StarryNightSection = () => {
         .starry-text {
           font-family: 'Montserrat', sans-serif;
           font-weight: 900;
-          font-size: clamp(3rem, 8vw, 7rem);
+          font-size: clamp(2.5rem, 12vw, 7rem); /* Adjusted for mobile */
           color: #FFFFFF;
           margin: 0;
           line-height: 1.1;
-          letter-spacing: 10px;
+          letter-spacing: clamp(2px, 2vw, 10px); /* Responsive spacing */
           text-shadow: 
             2px 2px 0 #E61E32, 
             4px 4px 15px rgba(0,0,0,0.8);

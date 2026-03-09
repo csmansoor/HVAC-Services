@@ -77,8 +77,9 @@ const CTASection = () => {
           transform: translateY(-3px);
         }
         @media (max-width: 768px) {
-          .cta-buttons { flex-direction: column; align-items: center; }
-          .cta-btn-white, .cta-btn-outline { width: 100%; text-align: center; margin: 5px 0; }
+          .cta-buttons { flex-direction: column; align-items: center; justify-content: center; }
+          .cta-btn-white, .cta-btn-outline { width: 100%; text-align: center; margin: 10px 0; }
+          .cta-btn-white { margin-right: 0; }
         }
       `}</style>
 
