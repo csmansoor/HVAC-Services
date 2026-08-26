@@ -5,6 +5,9 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: "/HVAC-Services/",
+  server: {
+    host: true, // Exposes the server to your local network (WiFi)
+  },
 })
 
 

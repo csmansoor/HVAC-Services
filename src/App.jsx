@@ -25,7 +25,7 @@ import DuctworkPage from './pages/services/DuctworkPage'
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
       <div>
         <Navbar />
@@ -49,6 +49,9 @@ function App() {
             <Route path="/services/water-filtration" element={<WaterFiltrationPage />} />
             <Route path="/services/gas-line" element={<GasLinePage />} />
             <Route path="/services/ductwork" element={<DuctworkPage />} />
+
+            {/* Fallback to Home */}
+            <Route path="*" element={<HomePage />} />
           </Routes>
         </main>
         <Footer />
